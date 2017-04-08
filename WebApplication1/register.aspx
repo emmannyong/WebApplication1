@@ -37,6 +37,17 @@
                             <label for="email">Password:</label>
                             <asp:TextBox TextMode="Password" ID="pass" CssClass="form-control" runat="server"></asp:TextBox>
                         </div>
+                        <div class="form-group col-md-12">
+                            <label for="email">New Status:</label><br />
+                            <asp:DropDownList CssClass="form-control" ID="role" runat="server"
+                                  AppendDataBoundItems="true">
+                            <asp:ListItem Value="-1">Select</asp:ListItem>
+                            <asp:ListItem Value="-1">Programmer</asp:ListItem>
+                            <asp:ListItem Value="-1">Developer</asp:ListItem>
+                            <asp:ListItem Value="-1">Tester</asp:ListItem>
+                            
+                            </asp:DropDownList>
+                        </div>
                         <div class="form-group">
                             <br />
                             <asp:Button ID="Button1" CssClass="btn btn-primary col-lg-12" runat="server" Text="Register" OnClick="Button1_Click" />
